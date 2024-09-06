@@ -14,11 +14,25 @@ There should be whitespace between paragraphs. We recommend including a README, 
 
 This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
 
-## Header 2
+## Creating a Secure dhcp Server For Sandboxing.
 
 > This is a blockquote following a header.
 >
 > > Built a small secure Testing/Hacking Inviroment where I am able to Open, Detonate and analyze Malware files, or Detect intrusions from setting up IDS software.
+> > **~$ vboxmanage list dhcpservers
+
+![[Screenshot from 2024-09-05 22-56-53.jpg]]
+
+
+**~$ vboxmanage dhcpserver add --network=RenasLove0 --server-ip=192.168.93.1 --netmask=255.255.255.0 --lower-ip=192.168.93.2 --upper-ip=192.168.93.254 --enable
+
+
+Again List the dhcp Servers
+
+**~$ vboxmanage list dhcpservers
+
+![[Screenshot from 2024-09-05 23-28-15.jpg]]
+
 > 
 > When something is important enough, you do it even if the odds are not in your favor.
 
